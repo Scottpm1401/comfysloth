@@ -1,0 +1,40 @@
+.breadcrumb {
+  display: flex;
+  background: var(--primary-10);
+  height: 20vh;
+  align-items: center;
+}
+
+.breadcrumb_center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb_redirect {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-3);
+  transition: color 300ms ease-in-out;
+  margin-right: 1rem;
+}
+
+.breadcrumb_home:hover {
+  color: #222;
+}
+
+.breadcrumb_page {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-1);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 835px) {
+  .breadcrumb_redirect {
+    font-size: 1.5rem;
+  }
+  .breadcrumb_page {
+    font-size: 1.5rem;
+  }
+}

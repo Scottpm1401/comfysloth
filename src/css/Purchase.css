@@ -1,0 +1,160 @@
+.purchase {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
+
+.bill {
+  margin: 2rem 0;
+  display: grid;
+  gap: 3rem;
+}
+
+.bill_header {
+  background: var(--grey-11);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 6rem;
+  align-items: center;
+  border-radius: 0.25rem;
+  color: var(--grey-3);
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.text_up {
+  text-transform: uppercase;
+}
+
+.order_place {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.delivery {
+  text-transform: capitalize;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.bill_content {
+  text-transform: capitalize;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.bill_product {
+  display: grid;
+  grid-template-columns: 600px 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.bill_product_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bill_product_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.bill_product_content {
+  display: grid;
+  gap: 1rem;
+}
+
+.bill_product_title {
+  text-transform: capitalize;
+}
+
+.bill_product_color {
+  display: flex;
+}
+
+.bill_product_price {
+  color: var(--primary-5);
+  font-weight: 400;
+}
+
+.bill_product_total {
+  color: red;
+  font-weight: 400;
+}
+
+.visa {
+  color: blue;
+}
+
+.shipping_status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shipping_text {
+  color: orange;
+}
+
+.bill_product_mobile_content {
+  display: none;
+}
+
+.bill_product_mobile_price {
+  color: var(--primary-5);
+}
+
+@media screen and (max-width: 1113px) {
+  .purchase {
+    min-height: 1000px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .purchase {
+    min-height: 800px;
+  }
+  .bill_product {
+    grid-template-columns: 400px 1fr 1fr 1fr;
+  }
+  .bill_header {
+    font-size: 0.875rem;
+  }
+  .bill_product_img {
+    height: 150px;
+  }
+  .bill_product_title {
+    font-size: 1.25rem;
+  }
+  .bill_product_color {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .purchase {
+    min-height: 500px;
+  }
+  .bill_header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .bill_product {
+    grid-template-columns: 1fr;
+  }
+  .bill_product_price,
+  .bill_product_quantity,
+  .bill_product_total_bill {
+    display: none;
+  }
+  .bill_product_mobile_content {
+    display: grid;
+    gap: 0.5rem;
+  }
+}

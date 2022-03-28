@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  height: 5rem;
+  background: #222;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.footer_content {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer_title {
+  color: var(--primary-5);
+}

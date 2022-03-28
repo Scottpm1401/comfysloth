@@ -1,0 +1,98 @@
+@import "./abstract/Variables.css";
+
+@import "./component/Scroll.css";
+@import "./component/Navbar.css";
+@import "./component/Breadcrumb.css";
+@import "./component/Footer.css";
+
+@import "./Home.css";
+@import "./About.css";
+@import "./Products.css";
+@import "./Product.css";
+@import "./Checkout.css";
+@import "./Cart.css";
+@import "./Login.css";
+@import "./Signup.css";
+@import "./Profile.css";
+@import "./Purchase.css";
+
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: grid;
+  height: auto;
+  min-height: 100vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--text);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-3);
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.375rem 0.75rem;
+  background: var(--primary-5);
+  color: var(--primary-10);
+  border-radius: 0.25rem;
+  font-weight: 300;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--primary-7);
+  color: var(--primary-1);
+}
+
+.shopping_btn {
+  text-transform: capitalize;
+}
+
+.loading_crl {
+  display: flex;
+  align-items: center;
+  height: auto;
+  flex-grow: 1;
+}
+
+.loading {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background: inherit;
+  display: block;
+  shape-rendering: auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--grey-8);
+}
+
+@media screen and (max-width: 450px) {
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}
