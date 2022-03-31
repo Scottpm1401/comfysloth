@@ -79,7 +79,7 @@ export class Profile extends Component {
     );
     if (upload) {
       const updateDB = await axiosClient.post(
-        API.USERS.UPLOAD(this.props.user._id),
+        API.USERS.UPLOAD(this.props.user.id),
         { img: upload.data.url }
       );
       this.props.updateProfileImg(upload.data.url);
